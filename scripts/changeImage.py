@@ -1,21 +1,16 @@
 # coding:utf-8
 import os
-
+import glob
 from PIL import Image
-
-
+file_list = glob.glob('/media/baymin/c731be01-5353-4600-8df0-b766fc1f9b80/new-work/素材/yunsheng_date/韵升pascal voc/VOCdevkit/VOC2012/JPEGImages/*.bmp')
 # bmp 转换为jpg
-def bmpToJpg(file_path):
-    for fileName in os.listdir(file_path):
+def bmpToJpg():
+    for num, fileName in enumerate(file_list):
         # print(fileName)
         newFileName = fileName[0:fileName.find(".")]+".jpg"
         print(newFileName)
-        im = Image.open(file_path+"/"+fileName)
-        im.save(file_path+"/"+newFileName)
-
-def main():
-    file_path = "/media/baymin/c731be01-5353-4600-8df0-b766fc1f9b80/new-work/darknet/6-21-darknet/mupian/VOCdevkit/VOC2012/JPEGImages/"
-    bmpToJpg(file_path)
+        im = Image.open(fileName)
+        im.save(newFileName)
 
 if __name__ == '__main__':
-    main()
+    bmpToJpg()
