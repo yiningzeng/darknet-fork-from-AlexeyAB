@@ -14,3 +14,9 @@ chart\.png
 scripts/kmeans\.pyc
 
 predictions\.jpg
+
+yunsheng-new-data/
+
+\.idea/
+
+\.git-rewrite/
