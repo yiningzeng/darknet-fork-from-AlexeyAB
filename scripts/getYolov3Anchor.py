@@ -7,7 +7,7 @@ import numpy as np
 from kmeans import kmeans, avg_iou
 
 # 根文件夹
-ROOT_PATH = '/media/baymin/c731be01-5353-4600-8df0-b766fc1f9b80/new-work/darknet/mupian-demo/'
+ROOT_PATH = '/media/baymin/c731be01-5353-4600-8df0-b766fc1f9b80/new-work/ab-darknet/yunsheng/'
 # 聚类的数目
 CLUSTERS = 9
 # 模型中图像的输入尺寸，默认是一样的

@@ -6,3 +6,9 @@ scripts/\.idea/
 scripts/VOCdevkit/
 
 *.txt
+
+yunsheng/
+
+chart\.png
+
+scripts/kmeans\.pyc
